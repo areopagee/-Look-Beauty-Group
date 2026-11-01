@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== EDIT: SEO ===== -->
+<title>Look Beauty Group LLC | Look good. Feel confident.</title>
+<meta name="description" content="Look Beauty Group LLC in Sheridan, Wyoming. Carefully selected beauty products and friendly customer care. Look good. Feel confident.">
+<link rel="canonical" href="https://lookbeauty.site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Look Beauty Group LLC | Look good. Feel confident.">
+<meta property="og:description" content="Carefully selected beauty products and friendly customer care from Look Beauty Group LLC.">
+<meta property="og:url" content="https://lookbeauty.site/">
+<meta property="og:image" content="https://lookbeauty.site/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#B5576B">
+
+<!-- Favicon: keep these files in the same folder as index.html -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Fonts: Playfair Display (headings) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- ===== LocalBusiness structured data (edit openingHours / add sameAs links when known) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Look Beauty Group LLC",
+  "url": "https://lookbeauty.site",
+  "image": "https://lookbeauty.site/hero.jpg",
+  "slogan": "Look good. Feel confident.",
+  "telephone": ["+1-575-305-6768", "+44-7882-520878"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "30 N Gould St",
+    "addressLocality": "Sheridan",
+    "addressRegion": "WY",
+    "postalCode": "82801",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<style>
+:root{
+  --ivory:#FAF6F1; --blush:#F2D4D0; --rose:#B5576B; --rose-dark:#9A4558;
+  --char:#2B2B2B; --gold:#C9A66B; --muted:#5E5855; --white:#fff;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--sans);color:var(--char);background:var(--ivory);line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--rose-dark)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem);margin-bottom:.75rem}
+h3{font-size:1.25rem;margin-bottom:.4rem}
+p{max-width:62ch}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--char);color:#fff;padding:.6rem 1rem;z-index:100;border-radius:6px}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+.lead{color:var(--muted);font-size:1.05rem}
+.rule{width:56px;height:3px;background:var(--gold);border:0;margin:0 0 1.25rem}
+
+/* Buttons */
+.btn{display:inline-block;padding:.8rem 1.6rem;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:2px solid var(--rose);cursor:pointer;font-family:var(--sans);transition:background .2s,color .2s}
+.btn-primary{background:var(--rose);color:#fff}
+.btn-primary:hover{background:var(--rose-dark);border-color:var(--rose-dark)}
+.btn-ghost{background:transparent;color:#fff;border-color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--char)}
+.btn-outline{background:transparent;color:var(--rose-dark)}
+.btn-outline:hover{background:var(--rose);color:#fff}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,241,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(43,43,43,.08)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:1rem}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--char);text-decoration:none}
+.logo span{color:var(--rose)}
+nav ul{display:flex;gap:1.75rem;list-style:none;align-items:center}
+nav a{color:var(--char);text-decoration:none;font-weight:500;font-size:.95rem;padding:.3rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-bottom-color:var(--gold)}
+nav a.btn{color:#fff;border-bottom:2px solid var(--rose);padding:.55rem 1.2rem}
+.menu-btn{display:none;background:none;border:0;padding:.5rem;cursor:pointer;color:var(--char)}
+@media(max-width:820px){
+  .menu-btn{display:block}
+  nav{position:absolute;top:68px;left:0;right:0;background:var(--ivory);border-bottom:1px solid rgba(43,43,43,.1);display:none;padding:1rem 1.25rem 1.5rem}
+  nav.open{display:block}
+  nav ul{flex-direction:column;align-items:flex-start;gap:1rem}
+}
+
+/* Hero */
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;color:#fff;padding:5rem 0;background:#6b3a46}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,25,30,.82),rgba(43,25,30,.45) 70%,rgba(43,25,30,.25))}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.4rem,8vw,4.4rem);max-width:14ch;margin-bottom:1rem}
+.hero p{font-size:1.15rem;margin-bottom:2rem;color:#fbeeee}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+
+/* About */
+.split{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:860px){.split{grid-template-columns:1fr 1fr;gap:4rem}.split.flip>:first-child{order:2}}
+.frame{position:relative}
+.frame img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;background:var(--blush)}
+.frame::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--gold);border-radius:6px;z-index:-1}
+.values{display:grid;gap:1.1rem;margin-top:1.75rem}
+.value{padding-left:1rem;border-left:3px solid var(--gold)}
+.value h3{font-size:1.1rem;margin:0}
+.value p{color:var(--muted);font-size:.95rem}
+
+/* Products */
+#products{background:var(--blush)}
+.banner{border-radius:6px;overflow:hidden;margin:2rem 0}
+.banner img{width:100%;height:clamp(180px,32vw,340px);object-fit:cover;background:#e8bdb8}
+.cards{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--ivory);padding:1.6rem;border-radius:6px;border-top:3px solid var(--rose)}
+.card p{color:var(--muted);font-size:.95rem;margin-bottom:1rem}
+.soon{display:inline-block;font-size:.8rem;font-weight:600;color:var(--char);background:#f1e2c4;padding:.25rem .7rem;border-radius:999px}
+.note{margin-top:1.25rem;font-size:.9rem;color:var(--muted)}
+
+/* Why */
+.why{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:2.25rem}
+.why svg{width:40px;height:40px;stroke:var(--rose);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:.8rem}
+.why p{color:var(--muted);font-size:.95rem}
+
+/* Contact */
+#contact{background:#fff;padding-top:0}
+.cbanner{position:relative;height:clamp(200px,30vw,320px);background:var(--rose);margin-bottom:4rem}
+.cbanner img{width:100%;height:100%;object-fit:cover}
+.cbanner::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(43,25,30,.5),transparent 60%)}
+.cbanner h2{position:absolute;left:50%;bottom:1.5rem;transform:translateX(-50%);width:100%;max-width:var(--max);padding:0 1.25rem;color:#fff;z-index:2;margin:0}
+.cgrid{display:grid;gap:3rem}
+@media(min-width:860px){.cgrid{grid-template-columns:1fr 1fr;gap:4rem}}
+address{font-style:normal;margin:1rem 0}
+.info a.tel{display:block;font-weight:600;font-size:1.05rem;margin:.25rem 0}
+.info small{display:block;color:var(--muted);margin-bottom:.9rem}
+form{display:grid;gap:1.1rem}
+label{font-weight:500;font-size:.92rem;display:block;margin-bottom:.3rem}
+input,textarea{width:100%;font:inherit;padding:.8rem .9rem;border:1.5px solid #bdb3ae;border-radius:6px;background:var(--ivory);color:var(--char)}
+input:focus,textarea:focus{outline:3px solid var(--rose);outline-offset:1px;border-color:var(--rose)}
+textarea{min-height:140px;resize:vertical}
+.msg{font-weight:500;min-height:1.5rem}
+.msg.ok{color:#2d6a43}.msg.err{color:#a02a2a}
+
+/* Footer */
+footer{background:var(--char);color:#e9e2dc;padding:3.5rem 0 2rem;font-size:.93rem}
+footer a{color:#f2d4d0}
+.fgrid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+footer h3{color:#fff;font-size:1.1rem}
+footer ul{list-style:none}
+footer li{margin:.35rem 0}
+.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:2.5rem;padding-top:1.25rem;font-size:.85rem}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home" aria-label="Look Beauty, home">Look <span>Beauty</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home" style="padding:5rem 0">
+  <!-- Replace hero.jpg with your image. Edit alt text to describe it. -->
+  <img src="hero.jpg" alt="[Describe hero image, e.g. a woman smiling with glowing skin]" fetchpriority="high">
+  <div class="wrap">
+    <!-- EDIT: headline and promise -->
+    <h1>Look good. Feel confident.</h1>
+    <p>Carefully selected beauty products and friendly support, from our team in Sheridan, Wyoming.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#products">Explore Products</a>
+      <a class="btn btn-ghost" href="#contact">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="wrap split">
+    <div class="frame">
+      <img src="about.jpg" alt="[Describe about image, e.g. beauty products arranged on a vanity]" loading="lazy" width="800" height="1000">
+    </div>
+    <div>
+      <h2>About Look Beauty</h2>
+      <hr class="rule">
+      <!-- EDIT: brand story. Replace the placeholder with your real story. -->
+      <p class="lead">Look Beauty Group LLC is a beauty company based in Sheridan, Wyoming. [Placeholder: add your founding story, who you serve, and what makes you different.]</p>
+      <div class="values">
+        <!-- EDIT: values -->
+        <div class="value"><h3>Quality</h3><p>We choose what we offer with care. [Placeholder: describe your selection standards.]</p></div>
+        <div class="value"><h3>Care</h3><p>Every customer gets a real, helpful response. [Placeholder: describe your service promise.]</p></div>
+        <div class="value"><h3>Confidence</h3><p>Beauty should help you feel like yourself, at your best.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUCTS / SERVICES ===================== -->
+<section id="products">
+  <div class="wrap">
+    <h2>Products &amp; Services</h2>
+    <hr class="rule">
+    <p class="lead">Our range is being prepared. Contact us to hear what is available first.</p>
+    <div class="banner">
+      <img src="products.jpg" alt="[Describe products image, e.g. a selection of beauty products]" loading="lazy" width="1200" height="400">
+    </div>
+    <!-- EDIT: category names and descriptions. Change these to match what you actually sell
+         (skincare / cosmetics / hair care / nail products / salon services). -->
+    <div class="cards">
+      <article class="card"><h3>Skincare</h3><p>Everyday essentials for your daily routine.</p><span class="soon">Coming soon</span></article>
+      <article class="card"><h3>Cosmetics</h3><p>Makeup for every look, from natural to bold.</p><span class="soon">Coming soon</span></article>
+      <article class="card"><h3>Hair Care</h3><p>Products for washing, styling and everyday care.</p><span class="soon">Coming soon</span></article>
+      <article class="card"><h3>Nail Care</h3><p>Polish and tools for home manicures.</p><span class="soon">Coming soon</span></article>
+    </div>
+    <p class="note">Prices will be added when products are available.</p>
+  </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section id="why">
+  <div class="wrap">
+    <h2>Why choose us</h2>
+    <hr class="rule">
+    <div class="why">
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>
+        <h3>Carefully selected products</h3><p>We review what we offer before it reaches you.</p>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.600-7 10-7 10z"/></svg>
+        <h3>Customer care</h3><p>Questions are welcome, and you will get a clear answer.</p>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+        <h3>Fast support</h3><p>Call us or send a message. [Placeholder: add your response time.]</p>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+        <h3>Reach us worldwide</h3><p>One US number and one international number.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="cbanner">
+    <img src="contact.jpg" alt="[Describe contact image, e.g. a bright, welcoming beauty space]" loading="lazy" width="1600" height="400">
+    <h2>Contact us</h2>
+  </div>
+  <div class="wrap cgrid">
+    <div class="info">
+      <h3>Look Beauty Group LLC</h3>
+      <address>30 N Gould St<br>Sheridan, WY 82801<br>United States</address>
+      <a class="tel" href="tel:+15753056768">+1 (575) 305-6768</a><small>United States</small>
+      <a class="tel" href="tel:+447882520878">+44 7882 520878</a><small>International</small>
+      <!-- [Placeholder: add business email and opening hours when confirmed] -->
+      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=30+N+Gould+St+Sheridan+WY+82801" target="_blank" rel="noopener">View on map<span class="sr" style="position:absolute;left:-999px"> (opens in a new tab)</span></a>
+    </div>
+    <!-- EDIT: set action to your form service (e.g. Formspree) or backend. Until then the JS shows a demo message only. -->
+    <form id="contactForm" action="#" method="post" novalidate>
+      <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+      <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <p class="msg" id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h3>Look Beauty Group LLC</h3>
+        <address>30 N Gould St<br>Sheridan, WY 82801<br>United States</address>
+      </div>
+      <div>
+        <h3>Call us</h3>
+        <ul>
+          <li><a href="tel:+15753056768">+1 (575) 305-6768</a></li>
+          <li><a href="tel:+447882520878">+44 7882 520878</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <!-- Keep Shipping &amp; Returns only if you sell online -->
+          <li><a href="shipping-returns.html">Shipping &amp; Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© 2026 Look Beauty Group LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+const btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu')});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}));
+
+// Contact form: validation only. Connect to a real service before launch.
+const f=document.getElementById('contactForm'),m=document.getElementById('formMsg');
+f.addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=f.name.value.trim(),em=f.email.value.trim(),ms=f.message.value.trim();
+  m.className='msg';
+  if(!n||!ms||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.classList.add('err');m.textContent='Please enter your name, a valid email, and a message.';return}
+  // TODO: send data here (fetch to your form endpoint).
+  m.classList.add('ok');m.textContent='Thank you. Your message is ready to send once the form is connected.';f.reset();
+});
+</script>
+</body>
+</html>
